@@ -118,7 +118,7 @@
 <!-- ./wrapper -->
 
 <!-- jQuery -->
-<scri src="{{asset('Admin/plugins/jquery/jquery.min.js')}}"></scri>
+<script src="{{asset('Admin/plugins/jquery/jquery.min.js')}}"></script>
 <!-- Bootstrap 4 -->
 <script src="{{asset('Admin/plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
 <!-- AdminLTE App -->
