@@ -15,7 +15,7 @@
   <!-- overlayScrollbars -->
   <link rel="stylesheet" href="{{asset('Admin/dist/css/adminlte.min.css')}}">
   <!-- Google Font: Source Sans Pro -->
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
 
   {{-- Script JS Carousel --}}
   <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
@@ -27,12 +27,12 @@
 <!-- Site wrapper -->
 <div class="wrapper">
   <!-- Navbar -->
-  @include('Partial.navbar')
+  @include('Layout.navbar')
   <!-- /.navbar -->
 
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
-    @include('Partial.sidebar')
+    @include('Layout.sidebar')
   </aside>
 
   <!-- Content Wrapper. Contains page content -->
@@ -42,7 +42,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-md mt-2" style="text-align: center">
-            <h1 style="font-weight: bolder">WELKAM DUDE SANTUY HYRUP</h1>
+            <h1 style="font-weight: bolder">@yield('title')</h1>
           </div>
         </div>
       </div><!-- /.container-fluid -->
@@ -51,47 +51,14 @@
     <!-- Main content -->
     <section class="content">
 
-      <!-- Default box -->
-      <div class="card">
+        <div class="card">
         <div class="card-header">
+          <h3 class="title" style="text-align: center">@yield('caption')</h3>
         
-        
-          {{-- Carousel --}}
-        
-          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img class="d-block w-100" src="Logo/slide1.png" alt="First slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="Logo/slide2.png" alt="Second slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="Logo/slide3.png" alt="Third slide">
-              </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
-          </div>    
-
-          {{-- End carousel --}}
-          
-
-        </div>
         <div class="card-body">
           @yield('content')
         </div>
+            </div>
         <!-- /.card-body -->
         <!-- /.card-footer-->
       </div>
@@ -118,7 +85,7 @@
 <!-- ./wrapper -->
 
 <!-- jQuery -->
-<script src="{{asset('Admin/plugins/jquery/jquery.min.js')}}"></script>
+<scri src="{{asset('Admin/plugins/jquery/jquery.min.js')}}"></scri>
 <!-- Bootstrap 4 -->
 <script src="{{asset('Admin/plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
 <!-- AdminLTE App -->
