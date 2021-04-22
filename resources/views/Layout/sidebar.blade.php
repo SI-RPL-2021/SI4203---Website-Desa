@@ -10,16 +10,29 @@
   <div class="sidebar">
 
     <!-- Sidebar Menu -->
-    <nav class="mt-3 pb-3 mb-3">
+    <nav class="mt-3 pb-3 mb-3 mt-3">
 
-      {{-- Profile Desa --}}
-      <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+      {{-- Beranda --}}
+      <ul class="nav nav-pills nav-sidebar flex-column mt-2" data-widget="treeview" role="menu" data-accordion="false">
         <li class="nav-item has-treeview">
           {{-- Extra --}}
           <a href="#" class="nav-link">
-            <i class="nav-icon fas fa-smile-beam"></i>
+            <i class="nav-icon fas fa-home"></i>
             <p>
-              Profile Desa
+              Beranda
+            </p>
+          </a>
+        </li>
+      </ul>
+
+      {{-- Profil Desa --}}
+      <ul class="nav nav-pills nav-sidebar flex-column mt-2" data-widget="treeview" role="menu" data-accordion="false">
+        <li class="nav-item has-treeview">
+          {{-- Extra --}}
+          <a href="#" class="nav-link">
+            <i class="nav-icon fas fa-user-circle"></i>
+            <p>
+              Profil Desa
             </p>
           </a>
         </li>
@@ -64,7 +77,7 @@
         <li class="nav-item has-treeview">
           {{-- Extra --}}
           <a href="#" class="nav-link">
-            <i class="nav-icon fab fa-steam-symbol"></i>
+            <i class="nav-icon fas fa-layer-group"></i>
             <p>
               Layanan
               <i class="fas fa-angle-left right"></i>
@@ -113,7 +126,7 @@
           <a href="#" class="nav-link">
             <i class="nav-icon fas fa-database"></i>
             <p>
-              Profile Desa
+              Data Desa
             </p>
           </a>
         </li>
