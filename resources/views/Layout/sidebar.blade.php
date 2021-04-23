@@ -16,7 +16,7 @@
       <ul class="nav nav-pills nav-sidebar flex-column mt-2" data-widget="treeview" role="menu" data-accordion="false">
         <li class="nav-item has-treeview">
           {{-- Extra --}}
-          <a href="#" class="nav-link">
+          <a href="/home" class="nav-link">
             <i class="nav-icon fas fa-home"></i>
             <p>
               Beranda
@@ -136,7 +136,7 @@
       <ul class="nav nav-pills nav-sidebar flex-column mt-2" data-widget="treeview" role="menu" data-accordion="false">
         <li class="nav-item has-treeview">
           {{-- Extra --}}
-          <a href="#" class="nav-link">
+          <a href="/contact" class="nav-link">
             <i class="nav-icon fas fa-phone"></i>
             <p>
               Kontak Perangkat Desa
