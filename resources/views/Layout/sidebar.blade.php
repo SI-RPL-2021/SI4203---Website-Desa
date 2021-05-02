@@ -32,7 +32,7 @@
           <a href="#" class="nav-link">
             <i class="nav-icon fas fa-user-circle"></i>
             <p>
-              Profil Desa
+              Profil desa
             </p>
           </a>
         </li>
