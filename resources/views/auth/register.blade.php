@@ -43,7 +43,7 @@
                             <label for="NoIdentitas" class="col-md-4 col-form-label text-md-right">{{ __('Nomor Identitas') }}</label>
 
                             <div class="col-md-6">
-                                <input id="NoIdentitas" type="text" class="form-control @error('NoIdentitas') is-invalid @enderror" name="" value="{{ old('NoIdentitas') }}" required autocomplete="NoIdentitas" autofocus>
+                                <input id="NoIdentitas" type="text" class="form-control @error('NoIdentitas') is-invalid @enderror" name="NoIdentitas" value="{{ old('NoIdentitas') }}" required autocomplete="NoIdentitas" autofocus>
 
                                 @error('NoIdentitas')
                                     <span class="invalid-feedback" role="alert">
