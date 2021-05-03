@@ -13,7 +13,7 @@
     <nav class="mt-3 pb-3 mb-3 mt-3">
 
       {{-- Beranda --}}
-      <ul class="nav nav-pills nav-sidebar flex-column mt-2" data-widget="treeview" role="menu" data-accordion="false">
+      <ul class="nav nav-pills nav-sidebar flex-column mt-3" data-widget="treeview" role="menu" data-accordion="false">
         <li class="nav-item has-treeview">
           {{-- Extra --}}
           <a href="/home" class="nav-link">
@@ -140,6 +140,19 @@
             <i class="nav-icon fas fa-phone"></i>
             <p>
               Kontak Perangkat Desa
+            </p>
+          </a>
+        </li>
+      </ul>
+
+      {{-- Transparansi Keuangan --}}
+      <ul class="nav nav-pills nav-sidebar flex-column mt-2" data-widget="treeview" role="menu" data-accordion="false">
+        <li class="nav-item has-treeview">
+          {{-- Extra --}}
+          <a href="/keuangan" class="nav-link">
+            <i class="nav-icon fas fa-donate"></i>
+            <p>
+              Transparansi Keuangan
             </p>
           </a>
         </li>
