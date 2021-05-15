@@ -3,13 +3,13 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\article;
+use App\Models\Article;
 
 class ArticleController extends Controller
 {
     public function home()
     {
-        $articles = article::all();
+        $articles = Article::all();
         return view('home', ['articles' => $articles]);
     }
     public function create(Request $req)
@@ -19,7 +19,7 @@ class ArticleController extends Controller
         $req->img_path->move(public_path('images/upload'), $img_path);
         
 
-        article::create([
+        Article::create([
             'judul' => $req->judul,
             'konten_singkat' => $req->konten_singkat,
             'image'=> $img_path,
@@ -29,7 +29,7 @@ class ArticleController extends Controller
     }
     public function detail(Request $req, $id)
     {
-        $article = article::find($id);
+        $article = Article::find($id);
         return view('detail', ['article' => $article]);
 
     }
