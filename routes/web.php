@@ -18,3 +18,5 @@ Route::post('/article', 'ArticleController@create')->name("article.create");
 Route::get('/article', function () {
     return view('article');
 })->name("article");
+
+Route::get('/lembaga', 'lembagaController@index')->name('lembaga');
