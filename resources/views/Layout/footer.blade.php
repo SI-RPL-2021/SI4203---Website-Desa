@@ -23,15 +23,6 @@
           ><i class="fab fa-instagram"></i
         ></a>
   
-        <!-- Linkedin -->
-        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-          ><i class="fab fa-linkedin-in"></i
-        ></a>
-  
-        <!-- Github -->
-        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-          ><i class="fab fa-github"></i
-        ></a>
       </section>
       <!-- Section: Social media -->
     </div>
@@ -92,13 +83,13 @@
               <h6 class="text-uppercase fw-bold mb-4">
                 Contact
               </h6>
-              <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+              <p><i class="fas fa-map me-3"></i> New York, NY 10012, US</p>
               <p>
                 <i class="fas fa-envelope me-3"></i>
-                info@example.com
+                manisrejo@desa.id
               </p>
-              <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
-              <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+              <p><i class="fas fa-phone me-3"></i> +62 120 54454</p>
+
             </div>
             <!-- Grid column -->
           </div>
