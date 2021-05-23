@@ -10,6 +10,14 @@ Route::get('/contact', function () {
     return view('contact');
 });
 
+Route::get('/keuangan', function () {
+    return view('keuangan');
+});
+
+Route::get('/profile', function () {
+    return view('profile');
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

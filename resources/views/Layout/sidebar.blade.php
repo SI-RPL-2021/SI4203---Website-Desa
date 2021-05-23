@@ -10,6 +10,7 @@
     <!-- Sidebar Menu -->
     <nav class="mt-3 pb-3 mb-3 mt-3">
 
+<<<<<<< HEAD
         {{-- Beranda --}}
         <ul class="nav nav-pills nav-sidebar flex-column mt-2" data-widget="treeview" role="menu"
             data-accordion="false">
@@ -21,6 +22,57 @@
                         Beranda
                     </p>
                 </a>
+=======
+      {{-- Beranda --}}
+      <ul class="nav nav-pills nav-sidebar flex-column mt-3" data-widget="treeview" role="menu" data-accordion="false">
+        <li class="nav-item has-treeview">
+          {{-- Extra --}}
+          <a href="/home" class="nav-link">
+            <i class="nav-icon fas fa-home"></i>
+            <p>
+              Beranda
+            </p>
+          </a>
+        </li>
+      </ul>
+
+      {{-- Profil Desa --}}
+      <ul class="nav nav-pills nav-sidebar flex-column mt-2" data-widget="treeview" role="menu" data-accordion="false">
+        <li class="nav-item has-treeview">
+          {{-- Extra --}}
+          <a href="/profile" class="nav-link">
+            <i class="nav-icon fas fa-user-circle"></i>
+            <p>
+              Profil desa
+            </p>
+          </a>
+        </li>
+      </ul>
+
+      {{-- Lembaga Desa --}}
+      <ul class="nav nav-pills nav-sidebar flex-column mt-2" data-widget="treeview" role="menu" data-accordion="false">
+        <li class="nav-item has-treeview">
+          {{-- Extra --}}
+          <a href="#" class="nav-link">
+            <i class="nav-icon fas fa-users"></i>
+            <p>
+              Lembaga Desa
+              <i class="fas fa-angle-left right"></i>
+            </p>
+          </a>
+          <ul class="nav nav-treeview">
+            <li class="nav-item">
+              <a href="../examples/pace.html" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>LPM</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="../examples/blank.html" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Karang Taruna</p>
+              </a>
+>>>>>>> master
             </li>
         </ul>
 
@@ -149,6 +201,19 @@
                 </a>
             </li>
         </ul>
+
+      {{-- Transparansi Keuangan --}}
+      <ul class="nav nav-pills nav-sidebar flex-column mt-2" data-widget="treeview" role="menu" data-accordion="false">
+        <li class="nav-item has-treeview">
+          {{-- Extra --}}
+          <a href="/keuangan" class="nav-link">
+            <i class="nav-icon fas fa-donate"></i>
+            <p>
+              Transparansi Keuangan
+            </p>
+          </a>
+        </li>
+      </ul>
 
     </nav>
     <!-- /.sidebar-menu -->

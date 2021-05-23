@@ -6,6 +6,8 @@
     <div class="card-header">
     </div>
 
+    <!-- halaman artikel -->
+
     <div class="card-body">
         <form action="{{route('article.create')}}" method="post" enctype="multipart/form-data">
             @csrf

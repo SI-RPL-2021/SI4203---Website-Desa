@@ -33,7 +33,7 @@
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     </head>
 
-    <body class="hold-transition sidebar-mini">
+    <body class="hold-transition sidebar-mini layout-fixed">
         <!-- Site wrapper -->
         <div class="wrapper">
             <!-- Navbar -->
@@ -51,7 +51,7 @@
                 <section class="content-header">
                     <div class="container-fluid">
                         <div class="row mb-2">
-                            <div class="col-md" style="text-align: center">
+                            <div class="col-md ml-5" style="text-align: left">
                                 <h1 style="font-weight: bolder">@yield('title')</h1>
                             </div>
                         </div>
@@ -61,30 +61,29 @@
                 <!-- Main content -->
                 <section class="content">
 
-                    <div class="card">
+                    <div class="card"> 
                         <div class="card-header">
-                            <h3 class="title" style="text-align: center">@yield('caption')</h3>
-
-                            <div class="card-body">
-                                @yield('content')
+                            <div class="mb-2">
+                                <h3 class="title" style="text-align: center">@yield('caption')</h3>
                             </div>
+
+                            <!-- /.Content Blade -->
+                                @yield('content')
+                            
                         </div>
                         <!-- /.card-body -->
-                        <!-- /.card-footer-->
                     </div>
-                    <!-- /.card -->
 
                 </section>
-                <!-- /.content -->
             </div>
-            <!-- /.content-wrapper -->
-
+            
             <footer class="main-footer">
-                <div class="float-right d-none d-sm-block">
-                    <b>Anak Desa Community</b> v.69
+                <strong>Copyright &copy; 2014-2020 <a href="https://adminlte.io">AdminLTE.io</a>.</strong>
+                All rights reserved.
+                <div class="float-right d-none d-sm-inline-block">
+                  <b>Version</b> 3.1.0-rc
                 </div>
-                <strong>Made By<a href="#"> TIM A </a> . </strong>SI 42 03
-            </footer>
+              </footer>
 
             <!-- Control Sidebar -->
             <aside class="control-sidebar control-sidebar-dark">
