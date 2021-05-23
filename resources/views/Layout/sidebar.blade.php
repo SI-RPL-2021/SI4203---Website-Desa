@@ -1,164 +1,170 @@
 <!-- Brand Logo -->
 <a href="#" class="navbar-brand">
-    <img src="Logo/Logo.png" width="100%"
-         alt=""
-         class="brand-image ">
+    <img src="Logo/Logo.png" width="100%" alt="" class="brand-image ">
     <span class="brand-text font-weight-light"></span>
-  </a>
+</a>
 
-  <!-- Sidebar -->
-  <div class="sidebar">
+<!-- Sidebar -->
+<div class="sidebar">
 
     <!-- Sidebar Menu -->
     <nav class="mt-3 pb-3 mb-3 mt-3">
 
-      {{-- Beranda --}}
-      <ul class="nav nav-pills nav-sidebar flex-column mt-3" data-widget="treeview" role="menu" data-accordion="false">
-        <li class="nav-item has-treeview">
-          {{-- Extra --}}
-          <a href="/home" class="nav-link">
-            <i class="nav-icon fas fa-home"></i>
-            <p>
-              Beranda
-            </p>
-          </a>
-        </li>
-      </ul>
 
-      {{-- Profil Desa --}}
-      <ul class="nav nav-pills nav-sidebar flex-column mt-2" data-widget="treeview" role="menu" data-accordion="false">
-        <li class="nav-item has-treeview">
-          {{-- Extra --}}
-          <a href="/profile" class="nav-link">
-            <i class="nav-icon fas fa-user-circle"></i>
-            <p>
-              Profil desa
-            </p>
-          </a>
-        </li>
-      </ul>
-
-      {{-- Lembaga Desa --}}
-      <ul class="nav nav-pills nav-sidebar flex-column mt-2" data-widget="treeview" role="menu" data-accordion="false">
-        <li class="nav-item has-treeview">
-          {{-- Extra --}}
-          <a href="#" class="nav-link">
-            <i class="nav-icon fas fa-users"></i>
-            <p>
-              Lembaga Desa
-              <i class="fas fa-angle-left right"></i>
-            </p>
-          </a>
-          <ul class="nav nav-treeview">
-            <li class="nav-item">
-              <a href="../examples/pace.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p>LPM</p>
-              </a>
+        {{-- Beranda --}}
+        <ul class="nav nav-pills nav-sidebar flex-column mt-3" data-widget="treeview" role="menu"
+            data-accordion="false">
+            <li class="nav-item has-treeview">
+                {{-- Extra --}}
+                <a href="/home" class="nav-link">
+                    <i class="nav-icon fas fa-home"></i>
+                    <p>
+                        Beranda
+                    </p>
+                </a>
             </li>
-            <li class="nav-item">
-              <a href="../examples/blank.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p>Karang Taruna</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="../../starter.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p>PKK</p>
-              </a>
-            </li>
-          </ul>
-        </li>
-      </ul>
+        </ul>
 
-      {{-- Layanan --}}
-      <ul class="nav nav-pills nav-sidebar flex-column mt-2" data-widget="treeview" role="menu" data-accordion="false">
-        <li class="nav-item has-treeview">
-          {{-- Extra --}}
-          <a href="#" class="nav-link">
-            <i class="nav-icon fas fa-layer-group"></i>
-            <p>
-              Layanan
-              <i class="fas fa-angle-left right"></i>
-            </p>
-          </a>
-          <ul class="nav nav-treeview">
-            <li class="nav-item">
-              <a href="../examples/pace.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p>Aspirasi</p>
-              </a>
+        {{-- Profil Desa --}}
+        <ul class="nav nav-pills nav-sidebar flex-column mt-2" data-widget="treeview" role="menu"
+            data-accordion="false">
+            <li class="nav-item has-treeview">
+                {{-- Extra --}}
+                <a href="/profile" class="nav-link">
+                    <i class="nav-icon fas fa-user-circle"></i>
+                    <p>
+                        Profil desa
+                    </p>
+                </a>
             </li>
-            <li class="nav-item">
-              <a href="../examples/blank.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p>Pengaudan</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="/kesehatan" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p>Kesehatan</p>
-              </a>
-            </li>
-          </ul>
-        </li>
-      </ul>
+        </ul>
 
-      {{-- Surat Online --}}
-      <ul class="nav nav-pills nav-sidebar flex-column mt-2" data-widget="treeview" role="menu" data-accordion="false">
-        <li class="nav-item has-treeview">
-          {{-- Extra --}}
-          <a href="#" class="nav-link">
-            <i class="nav-icon fas fa-envelope"></i>
-            <p>
-              Surat Online
-            </p>
-          </a>
-        </li>
-      </ul>
+        {{-- Lembaga Desa --}}
+        <ul class="nav nav-pills nav-sidebar flex-column mt-2" data-widget="treeview" role="menu"
+            data-accordion="false">
+            <li class="nav-item has-treeview">
+                {{-- Extra --}}
+                <a href="#" class="nav-link">
+                    <i class="nav-icon fas fa-users"></i>
+                    <p>
+                        Lembaga Desa
+                        <i class="fas fa-angle-left right"></i>
+                    </p>
+                </a>
+                <ul class="nav nav-treeview">
+                    <li class="nav-item">
+                        <a href="../examples/pace.html" class="nav-link">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>LPM</p>
+                        </a>
+                    </li>
 
-      {{-- Data Desa --}}
-      <ul class="nav nav-pills nav-sidebar flex-column mt-2" data-widget="treeview" role="menu" data-accordion="false">
-        <li class="nav-item has-treeview">
-          {{-- Extra --}}
-          <a href="#" class="nav-link">
-            <i class="nav-icon fas fa-database"></i>
-            <p>
-              Data Desa
-            </p>
-          </a>
-        </li>
-      </ul>   
+                    <li class="nav-item">
+                        <a href="../examples/blank.html" class="nav-link">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>Karang Taruna</p>
+                        </a>
+                    </li>
 
-      {{-- Kontak --}}
-      <ul class="nav nav-pills nav-sidebar flex-column mt-2" data-widget="treeview" role="menu" data-accordion="false">
-        <li class="nav-item has-treeview">
-          {{-- Extra --}}
-          <a href="/contact" class="nav-link">
-            <i class="nav-icon fas fa-phone"></i>
-            <p>
-              Kontak Perangkat Desa
-            </p>
-          </a>
-        </li>
-      </ul>
+                    <li class="nav-item">
+                        <a href="../examples/blank.html" class="nav-link">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>PKK</p>
+                        </a>
+                    </li>
 
-      {{-- Transparansi Keuangan --}}
-      <ul class="nav nav-pills nav-sidebar flex-column mt-2" data-widget="treeview" role="menu" data-accordion="false">
-        <li class="nav-item has-treeview">
-          {{-- Extra --}}
-          <a href="/keuangan" class="nav-link">
-            <i class="nav-icon fas fa-donate"></i>
-            <p>
-              Transparansi Keuangan
-            </p>
-          </a>
-        </li>
-      </ul>
+                </ul>
+
+                {{-- Layanan --}}
+                <ul class="nav nav-pills nav-sidebar flex-column mt-2" data-widget="treeview" role="menu"
+                    data-accordion="false">
+                    <li class="nav-item has-treeview">
+                        {{-- Extra --}}
+                        <a href="#" class="nav-link">
+                            <i class="nav-icon fas fa-layer-group"></i>
+                            <p>
+                                Layanan
+                                <i class="fas fa-angle-left right"></i>
+                            </p>
+                        </a>
+                        <ul class="nav nav-treeview">
+                            <li class="nav-item">
+                                <a href="../examples/pace.html" class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>Aspirasi</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../examples/blank.html" class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>Pengaduan</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/kesehatan" class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>Kesehatan</p>
+                                </a>
+                            </li>
+                        </ul>
+
+                        {{-- Surat Online --}}
+                        <ul class="nav nav-pills nav-sidebar flex-column mt-2" data-widget="treeview" role="menu"
+                            data-accordion="false">
+                            <li class="nav-item has-treeview">
+                                {{-- Extra --}}
+                                <a href="#" class="nav-link">
+                                    <i class="nav-icon fas fa-envelope"></i>
+                                    <p>
+                                        Surat Online
+                                    </p>
+                                </a>
+                            </li>
+                        </ul>
+
+                        {{-- Data Desa --}}
+                        <ul class="nav nav-pills nav-sidebar flex-column mt-2" data-widget="treeview" role="menu"
+                            data-accordion="false">
+                            <li class="nav-item has-treeview">
+                                {{-- Extra --}}
+                                <a href="#" class="nav-link">
+                                    <i class="nav-icon fas fa-database"></i>
+                                    <p>
+                                        Data Desa
+                                    </p>
+                                </a>
+                            </li>
+                        </ul>
+
+                        {{-- Kontak --}}
+                        <ul class="nav nav-pills nav-sidebar flex-column mt-2" data-widget="treeview" role="menu"
+                            data-accordion="false">
+                            <li class="nav-item has-treeview">
+                                {{-- Extra --}}
+                                <a href="/contact" class="nav-link">
+                                    <i class="nav-icon fas fa-phone"></i>
+                                    <p>
+                                        Kontak Perangkat Desa
+                                    </p>
+                                </a>
+                            </li>
+                        </ul>
+
+                        {{-- Transparansi Keuangan --}}
+                        <ul class="nav nav-pills nav-sidebar flex-column mt-2" data-widget="treeview" role="menu"
+                            data-accordion="false">
+                            <li class="nav-item has-treeview">
+                                {{-- Extra --}}
+                                <a href="/keuangan" class="nav-link">
+                                    <i class="nav-icon fas fa-donate"></i>
+                                    <p>
+                                        Transparansi Keuangan
+                                    </p>
+                                </a>
+                            </li>
+                        </ul>
 
     </nav>
     <!-- /.sidebar-menu -->
-  </div>
-  <!-- /.sidebar -->
+</div>
+<!-- /.sidebar -->
