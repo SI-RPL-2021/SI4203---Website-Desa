@@ -14,13 +14,12 @@ Route::get('/keuangan', function () {
     return view('keuangan');
 });
 
-<<<<<<< HEAD
 Route::get('/profile', function () {
     return view('profile');
-=======
-Route::get('/kesehatan', function () {
-    return view('kesehatan');
->>>>>>> Hisyam
+});
+
+Route::get('/aboutUs', function () {
+    return view('aboutUs');
 });
 
 Auth::routes();
@@ -31,9 +30,7 @@ Route::post('/article', 'ArticleController@create')->name("article.create");
 Route::get('/article', function () {
     return view('article');
 })->name("article");
-<<<<<<< HEAD
-=======
+
 Route::get('/article/{id}', 'ArticleController@detail')->name("article.detail");
 
 Route::resource('kesehatan', 'kesehatanController');
->>>>>>> Hisyam
