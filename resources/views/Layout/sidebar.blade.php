@@ -97,7 +97,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a href="../../starter.html" class="nav-link">
+              <a href="/kesehatan" class="nav-link">
                 <i class="far fa-circle nav-icon"></i>
                 <p>Kesehatan</p>
               </a>
