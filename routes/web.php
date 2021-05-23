@@ -14,6 +14,10 @@ Route::get('/keuangan', function () {
     return view('keuangan');
 });
 
+Route::get('/kesehatan', function () {
+    return view('kesehatan');
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
@@ -23,3 +27,5 @@ Route::get('/article', function () {
     return view('article');
 })->name("article");
 Route::get('/article/{id}', 'ArticleController@detail')->name("article.detail");
+
+Route::resource('kesehatan', 'kesehatanController');
