@@ -123,6 +123,7 @@
                     </li>
                 </ul>
             </li>
+<<<<<<< HEAD
         </ul>
 
         {{-- Layanan --}}
@@ -157,6 +158,13 @@
                         </a>
                     </li>
                 </ul>
+=======
+            <li class="nav-item">
+              <a href="/kesehatan" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Kesehatan</p>
+              </a>
+>>>>>>> c4f133709455af2da2feb41aafc2738fb9931921
             </li>
         </ul>
 
