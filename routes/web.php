@@ -22,6 +22,10 @@ Route::get('/kesehatan', function () {
     return view('kesehatan');
 });
 
+Route::get('/aspirasi', function () {
+    return view('aspirasi');
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
