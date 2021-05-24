@@ -83,10 +83,10 @@
               <h6 class="text-uppercase fw-bold mb-4">
                 Contact
               </h6>
-              <p><i class="fas fa-map me-3"></i> New York, NY 10012, US</p>
+              <p><i class="fas fa-map me-3"></i> Kota Madiun, Jawa Timur</p>
               <p>
                 <i class="fas fa-envelope me-3"></i>
-                manisrejo@desa.id
+                 manisrejo@desa.id
               </p>
               <p><i class="fas fa-phone me-3"></i> +62 120 54454</p>
 

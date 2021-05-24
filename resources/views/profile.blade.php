@@ -7,10 +7,10 @@ Sejarah Desa
 @section('content')
  <!-- /.row -->
  <div class="row">
-        <div class="col-12">
+        <div class="col-lg-12">
           <div class="card">
           <div class="card-header">
-          <img src="https://kelurahan-manisrejo.madiunkota.go.id/wp-content/uploads/2021/03/pagu.jpeg" class="img-fluid" alt="...">
+          <img src="https://kelurahan-manisrejo.madiunkota.go.id/wp-content/uploads/2021/03/pagu.jpeg" class="img-responsive" style="display: flex" style="align-items: flex-end">
           <p class="card-text">Perjalanan terbentuknya Kelurahan Manisrejo mengalami perubahan beberapa kali, karena kebijakan administratif dan kewilayahan oleh Pemerintah, untuk mengetahuinya diperlukan penjelesan pada beberapa periode, yaitu :</p>
           <ol>
           <li>Periode sebelum masuk Wilayah Kota Madiun.&nbsp;</li>

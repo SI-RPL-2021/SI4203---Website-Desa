@@ -28,18 +28,40 @@
         @method('PUT')
    
          <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-12">
-                <div class="form-group">
-                    <strong>Name:</strong>
-                    <input type="text" name="name" value="{{ $kesehatan->name }}" class="form-control" placeholder="Name">
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <div class="form-group">
+                        <strong>No Identitas :</strong>
+                        <input type="text" name="NoIdentitas" id="NoIdentitas" class="form-control" value="{{ Auth::user()->NoIdentitas }}">
+                    </div>
                 </div>
-            </div>
-            <div class="col-xs-12 col-sm-12 col-md-12">
-                <div class="form-group">
-                    <strong>Detail:</strong>
-                    <textarea class="form-control" style="height:150px" name="detail" placeholder="Detail">{{ $kesehatan->detail }}</textarea>
+                
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <div class="form-group">
+                        <strong>Nama :</strong>
+                        <input type="text" name="name" id="name" class="form-control" value="{{ Auth::user()->name }}">
+                    </div>
                 </div>
-            </div>
+        
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <div class="form-group">
+                        <strong>No. HP :</strong>
+                        <input type="text" name="NoHP" id="NoHP" class="form-control" placeholder="08XXXXXXXXX">
+                    </div>
+                </div>
+        
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <div class="form-group">
+                        <strong>Alamat :</strong>
+                        <input type="text" name="Alamat" id="Alamat" class="form-control" placeholder="Jl. XXXXXX">
+                    </div>
+                </div>
+        
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <div class="form-group">
+                        <strong>Keterangan Keluhan :</strong>
+                        <textarea class="form-control" style="height:150px" name="Keluhan" id="Keluhan" placeholder="Apa keluhan yang anda rasakan"></textarea>
+                    </div>
+                </div>      
             <div class="col-xs-12 col-sm-12 col-md-12 text-center">
               <button type="submit" class="btn btn-primary">Submit</button>
             </div>
