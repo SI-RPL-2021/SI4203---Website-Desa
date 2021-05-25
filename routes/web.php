@@ -23,8 +23,10 @@ Route::get('/kesehatan', function () {
 });
 
 Route::get('/aspirasi', function () {
-    return view('aspirasi');
+    return view('aspirasi.create');
 });
+
+Route::resource('aspirasi', 'aspirasiController');
 
 Auth::routes();
 

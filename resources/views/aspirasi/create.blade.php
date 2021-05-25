@@ -12,7 +12,7 @@
     </div>
 </div>
 
-@if ($errors->any())
+<!-- @if ($errors->any())
 <div class="alert alert-danger">
     <strong>Whoops!</strong> There were some problems with your input.<br><br>
     <ul>
@@ -21,7 +21,7 @@
         @endforeach
     </ul>
 </div>
-@endif
+@endif -->
 
 <form action="{{ route('aspirasi.store') }}" method="POST">
     @csrf
@@ -31,14 +31,14 @@
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>Nama :</strong>
-                <input type="text" name="name" id="name" class="form-control" value="{{ Auth::user()->name }}">
+                <input type="text" name="Nama" id="Nama" class="form-control" value="{{ Auth::user()->name }}">
             </div>
         </div>
 
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>Deskripsikan Aspirasi Anda :</strong>
-                <textarea class="form-control" style="height:150px" name="aspirasi" id="aspirasi"
+                <textarea class="form-control" style="height:150px" name="Deskripsi" id="Deskripsi"
                     placeholder=" "></textarea>
             </div>
         </div>
