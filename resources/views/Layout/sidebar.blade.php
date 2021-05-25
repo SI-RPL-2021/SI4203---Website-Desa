@@ -85,7 +85,7 @@
                                 </a>
                                 <ul class="nav nav-treeview">
                                     <li class="nav-item">
-                                        <a href="../examples/pace.html" class="nav-link">
+                                        <a href="/buataspirasi" class="nav-link">
                                             <i class="far fa-circle nav-icon"></i>
                                             <p>Aspirasi</p>
                                         </a>

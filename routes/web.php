@@ -23,8 +23,10 @@ Route::get('/kesehatan', function () {
 });
 
 Route::get('/aspirasi', function () {
-    return view('aspirasi.create');
+    return view('aspirasi');
 });
+
+Route::get('/buataspirasi', 'aspirasiController@create')->name("aspirasi.create");
 
 Route::resource('aspirasi', 'aspirasiController');
 
