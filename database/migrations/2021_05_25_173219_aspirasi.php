@@ -28,6 +28,6 @@ class Aspirasi extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('aspirasi');
     }
 }

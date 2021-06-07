@@ -26,7 +26,7 @@ Route::get('/aspirasi', function () {
     return view('aspirasi');
 });
 
-Route::get('/buataspirasi', 'aspirasiController@create')->nama("aspirasi.create");
+Route::get('/buataspirasi', 'aspirasiController@create')->name("aspirasi.create");
 
 Route::resource('aspirasi', 'aspirasiController');
 

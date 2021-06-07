@@ -30,6 +30,6 @@ class Pengaduan extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('pengaduan');
     }
 }
