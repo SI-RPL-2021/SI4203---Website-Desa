@@ -26,9 +26,19 @@ Route::get('/aspirasi', function () {
     return view('aspirasi');
 });
 
-Route::get('/buataspirasi', 'aspirasiController@create')->name("aspirasi.create");
+Route::get('/buataspirasi', 'aspirasiController@create')->nama("aspirasi.create");
 
 Route::resource('aspirasi', 'aspirasiController');
+
+
+Route::get('/pengaduan', function () {
+    return view('pengaduan');
+});
+
+Route::get('/buatpengaduan', 'pengaduanController@create')->name("pengaduan.create");
+
+Route::resource('pengaduan', 'pengaduanController');
+
 
 Auth::routes();
 

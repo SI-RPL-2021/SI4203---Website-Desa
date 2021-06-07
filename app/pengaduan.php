@@ -4,9 +4,9 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class aspirasi extends Model
+class pengaduan extends Model
 {
     protected $fillable = [
-        'name', 'Deskripsi'
+        'Nama', 'masalah', 'bukti', 'keterangan'
     ];
 }

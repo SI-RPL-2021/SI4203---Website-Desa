@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class Aspirasi extends Migration
+class Pengaduan extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,13 @@ class Aspirasi extends Migration
      */
     public function up()
     {
-        Schema::create('aspirasi', function (Blueprint $table) {
+        Schema::create('pengaduan', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            $table->string("name");
-            $table->string("Deskripsi");
+            $table->string("Nama");
+            $table->string("masalah");
+            $table->string("bukti");
+            $table->string("keterangan");
         });
     }
 

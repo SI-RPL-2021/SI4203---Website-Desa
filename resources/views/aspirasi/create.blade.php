@@ -31,7 +31,7 @@
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>Nama :</strong>
-                <input type="text" name="Nama" id="Nama" class="form-control" value="{{ Auth::user()->name }}">
+                <input type="text" name="nama" id="nama" class="form-control" value="{{ Auth::user()->nama }}">
             </div>
         </div>
 
