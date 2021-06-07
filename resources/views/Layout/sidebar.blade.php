@@ -93,7 +93,7 @@
                                     <li class="nav-item">
                                         <a href="/buatpengaduan" class="nav-link">
                                             <i class="far fa-circle nav-icon"></i>
-                                            <p>Pengaduann</p>
+                                            <p>Pengaduan</p>
                                         </a>
                                     </li>
                                     <li class="nav-item">
