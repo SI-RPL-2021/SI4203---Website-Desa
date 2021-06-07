@@ -10,6 +10,7 @@
     <!-- Sidebar Menu -->
     <nav class="mt-3 pb-3 mb-3 mt-3">
 
+<<<<<<< HEAD
         {{-- Beranda --}}
         <ul class="nav nav-pills nav-sidebar flex-column mt-3" data-widget="treeview" role="menu"
             data-accordion="false">
@@ -23,6 +24,46 @@
                 </a>
             </li>
         </ul>
+=======
+      {{-- Beranda --}}
+      <ul class="nav nav-pills nav-sidebar flex-column mt-3" data-widget="treeview" role="menu" data-accordion="false">
+        <li class="nav-item has-treeview">
+          {{-- Extra --}}
+          <a href="/home" class="nav-link">
+            <i class="nav-icon fas fa-home"></i>
+            <p>
+              Beranda
+            </p>
+          </a>
+        </li>
+      </ul>
+
+      {{-- Profil Desa --}}
+      <ul class="nav nav-pills nav-sidebar flex-column mt-2" data-widget="treeview" role="menu" data-accordion="false">
+        <li class="nav-item has-treeview">
+          {{-- Extra --}}
+          <a href="/profile" class="nav-link">
+            <i class="nav-icon fas fa-user-circle"></i>
+            <p>
+              Profil desa
+            </p>
+          </a>
+        </li>
+      </ul>
+
+      {{-- Lembaga Desa --}}
+      <ul class="nav nav-pills nav-sidebar flex-column mt-2" data-widget="treeview" role="menu" data-accordion="false">
+        <li class="nav-item has-treeview">
+          {{-- Extra --}}
+          <a href="/lembaga" class="nav-link">
+            <i class="nav-icon fas fa-users"></i>
+            <p>
+              Lembaga Desa
+            </p>
+          </a>
+        </li>
+      </ul>     
+>>>>>>> 1888595dd26a345a87d55009cee715af8ea4a908
 
         {{-- Profil Desa --}}
         <ul class="nav nav-pills nav-sidebar flex-column mt-2" data-widget="treeview" role="menu"
@@ -87,6 +128,7 @@
             </li>
         </ul>
 
+<<<<<<< HEAD
         {{-- Surat Online --}}
         <ul class="nav nav-pills nav-sidebar flex-column mt-2" data-widget="treeview" role="menu"
             data-accordion="false">
@@ -100,6 +142,20 @@
                 </a>
             </li>
         </ul>
+=======
+      {{-- Surat Online --}}
+      <ul class="nav nav-pills nav-sidebar flex-column mt-2" data-widget="treeview" role="menu" data-accordion="false">
+        <li class="nav-item has-treeview">
+          {{-- Extra --}}
+          <a href="/suratonline" class="nav-link">
+            <i class="nav-icon fas fa-envelope"></i>
+            <p>
+              Surat Online
+            </p>
+          </a>
+        </li>
+      </ul>
+>>>>>>> 1888595dd26a345a87d55009cee715af8ea4a908
 
         {{-- Data Desa --}}
         <ul class="nav nav-pills nav-sidebar flex-column mt-2" data-widget="treeview" role="menu"

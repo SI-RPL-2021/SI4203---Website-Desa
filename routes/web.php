@@ -27,6 +27,14 @@ Route::get('/kesehatan', function () {
     return view('kesehatan');
 });
 
+Route::get('/kesehatan', function () {
+    return view('kesehatan');
+});
+
+Route::get('/suratonline', function () {
+    return view('suratonline');
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
@@ -46,3 +54,5 @@ Route::get('/lembaga', 'lembagaController@index')->name('lembaga');
 Route::get('/article/{id}', 'ArticleController@detail')->name("article.detail");
 
 Route::resource('kesehatan', 'kesehatanController');
+
+Route::resource('suratonline', 'suratonlineController');
