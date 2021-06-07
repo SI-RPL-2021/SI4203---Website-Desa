@@ -25,7 +25,7 @@
     @foreach ($aspirasi as $aspirasi)
     <tr>
         <td>{{ ++$i }}</td>
-        <td>{{ $aspirasi->Nama }}</td>
+        <td>{{ $aspirasi->name }}</td>
         <td>{{ $aspirasi->Deskripsi }}</td>
         <td>
             <form action="{{ route('aspirasi.destroy',$aspirasi->id) }}" method="POST">
