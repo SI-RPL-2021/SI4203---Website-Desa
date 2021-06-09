@@ -30,7 +30,6 @@ Route::get('/buataspirasi', 'aspirasiController@create')->name("aspirasi.create"
 
 Route::resource('aspirasi', 'aspirasiController');
 
-Auth::routes();
 
 Route::get('/pengaduan', function () {
     return view('pengaduan');
@@ -39,6 +38,7 @@ Route::get('/pengaduan', function () {
 Route::get('/buatpengaduan', 'pengaduanController@create')->name("pengaduan.create");
 
 Route::resource('pengaduan', 'pengaduanController');
+
 
 Auth::routes();
 

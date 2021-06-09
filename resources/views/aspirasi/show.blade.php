@@ -16,7 +16,7 @@
     <div class="col-xs-12 col-sm-12 col-md-12">
         <div class="form-group">
             <strong>Nama :</strong>
-            {{ $aspirasi->Nama }}
+            {{ $aspirasi->name }}
         </div>
         <hr>
         <div class="form-group">
