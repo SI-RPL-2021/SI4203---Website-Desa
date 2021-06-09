@@ -23,7 +23,7 @@ Selamat datang di Website Desa Manisrejo
                 <div class="carousel-item active">
                     <img class="d-block w-100" src="Logo/slide1.png" alt="First slide">
                         <div class="border-info carousel-caption d-none d-md-block mx-auto bg-shadow" style="max-width: 30rem;">
-                            <h3>Musyawarah Dengan Bupati Magetan</h3>
+                            <h3>Musyawarah Dengan Bupati Madiun</h3>
                         </div>
                 </div>
                 <div class="carousel-item">
@@ -35,7 +35,7 @@ Selamat datang di Website Desa Manisrejo
                 <div class="carousel-item">
                     <img class="d-block w-100" src="Logo/slide3.png" alt="Third slide">
                         <div class="border-info carousel-caption d-none d-md-block mx-auto bg-shadow" style="max-width: 30rem;">
-                            <h3>Kunjungan Desa oleh Bupati Manisrejo</h3>
+                            <h3>Kunjungan Desa oleh Bupati Madiun di Desa Manisrejo</h3>
                         </div>
                 </div>
             </div>
@@ -61,9 +61,9 @@ Selamat datang di Website Desa Manisrejo
             </h1>
             <!-- Blog post-->
             <div class="card mb-4">
-                <img class="card-img-top" src="https://via.placeholder.com/750x300" alt="Card image cap" />
+                <img class="card-img-top" src="https://images.unsplash.com/photo-1619918456538-df5b5290950b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Card image cap" style="max-width: 50rem" />
                 <div class="card-body">
-                    <h2 class="card-title">Post Title</h2>
+                    <h2 class="card-title" style="font-weight: bolder">Warga Gotong Royong Ke Sawah</h2>
                     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
                     <a class="btn btn-primary" href="#!">Read More →</a>
                 </div>
@@ -74,22 +74,21 @@ Selamat datang di Website Desa Manisrejo
             </div>
             <!-- Blog post-->
             <div class="card mb-4">
-                <img class="card-img-top" src="https://via.placeholder.com/750x300" alt="Card image cap" />
+                <img class="card-img-top" src="https://images.unsplash.com/photo-1621525408631-18c0c8cccd13?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Card image cap" style="max-width: 50rem" />
                 <div class="card-body">
-                    <h2 class="card-title">Post Title</h2>
+                    <h2 class="card-title" style="font-weight: bolder">Pendataan warga untuk di vaksinasi</h2>
                     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
                     <a class="btn btn-primary" href="#!">Read More →</a>
                 </div>
                 <div class="card-footer text-muted">
-                    Posted on January 1, 2021 by
-                    <a href="#!">Start Bootstrap</a>
+                    Posted on January 1, 2021
                 </div>
             </div>
             <!-- Blog post-->
             <div class="card mb-4">
-                <img class="card-img-top" src="https://via.placeholder.com/750x300" alt="Card image cap" />
+                <img class="card-img-top" src="https://images.unsplash.com/photo-1619918456628-e9180a6d7916?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Card image cap" style="max-width: 50rem" />
                 <div class="card-body">
-                    <h2 class="card-title">Post Title</h2>
+                    <h2 class="card-title" style="font-weight: bolder">Peringatan Hari Pancasila</h2>
                     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
                     <a class="btn btn-primary" href="#!">Read More →</a>
                 </div>
@@ -110,8 +109,44 @@ Selamat datang di Website Desa Manisrejo
             </div>
             <!-- Side widget-->
             <div class="card my-4">
-                <h5 class="card-header">Side Widget</h5>
-                <div class="card-body">You can put anything you want inside of these side widgets. They are easy to use, and feature the new Bootstrap 4 card containers!</div>
+                <div class="card bg-gradient-success">
+                    <div class="card-header border-0">
+    
+                      <h3 class="card-title">
+                        <i class="far fa-calendar-alt"></i>
+                        Calendar
+                      </h3>
+                      <!-- tools card -->
+                      <div class="card-tools">
+                        <!-- button with a dropdown -->
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-success btn-sm dropdown-toggle" data-toggle="dropdown"
+                            data-offset="-52">
+                            <i class="fas fa-bars"></i>
+                          </button>
+                          <div class="dropdown-menu" role="menu">
+                            <a href="#" class="dropdown-item">Add new event</a>
+                            <a href="#" class="dropdown-item">Clear events</a>
+                            <div class="dropdown-divider"></div>
+                            <a href="#" class="dropdown-item">View calendar</a>
+                          </div>
+                        </div>
+                        <button type="button" class="btn btn-success btn-sm" data-card-widget="collapse">
+                          <i class="fas fa-minus"></i>
+                        </button>
+                        <button type="button" class="btn btn-success btn-sm" data-card-widget="remove">
+                          <i class="fas fa-times"></i>
+                        </button>
+                      </div>
+                      <!-- /. tools -->
+                    </div>
+                    <!-- /.card-header -->
+                    <div class="card-body pt-0">
+                      <!--The calendar -->
+                      <div id="calendar" style="width: 100%"></div>
+                    </div>
+                    <!-- /.card-body -->
+                  </div>
             </div>
         </div>
     </div>

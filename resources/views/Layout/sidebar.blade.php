@@ -12,7 +12,7 @@
 
 
         {{-- Beranda --}}
-        <ul class="nav nav-pills nav-sidebar flex-column mt-2" data-widget="treeview" role="menu"
+        <ul class="nav nav-pills nav-sidebar flex-column mt-3" data-widget="treeview" role="menu"
             data-accordion="false">
             <li class="nav-item has-treeview">
                 {{-- Extra --}}
@@ -22,6 +22,7 @@
                         Beranda
                     </p>
                 </a>
+<<<<<<< HEAD
 
 
                 {{-- Profil Desa --}}
@@ -37,6 +38,38 @@
                         </a>
                     </li>
                 </ul>
+=======
+            </li>
+        </ul>
+
+        {{-- Profil Desa --}}
+        <ul class="nav nav-pills nav-sidebar flex-column mt-2" data-widget="treeview" role="menu"
+            data-accordion="false">
+            <li class="nav-item has-treeview">
+                {{-- Extra --}}
+                <a href="/profile" class="nav-link">
+                    <i class="nav-icon fas fa-user-circle"></i>
+                    <p>
+                        Profil desa
+                    </p>
+                </a>
+            </li>
+        </ul>
+
+        {{-- Lembaga Desa --}}
+        <ul class="nav nav-pills nav-sidebar flex-column mt-2" data-widget="treeview" role="menu"
+            data-accordion="false">
+            <li class="nav-item has-treeview">
+                {{-- Extra --}}
+                <a href="/lembaga" class="nav-link">
+                    <i class="nav-icon fas fa-users"></i>
+                    <p>
+                        Lembaga Desa
+                    </p>
+                </a>
+            </li>
+        </ul>
+>>>>>>> de1be75d84883065a199fde33272a442930a3ebd
 
                 {{-- Lembaga Desa --}}
                 <ul class="nav nav-pills nav-sidebar flex-column mt-2" data-widget="treeview" role="menu"
@@ -50,6 +83,7 @@
                                 <i class="fas fa-angle-left right"></i>
                             </p>
                         </a>
+<<<<<<< HEAD
                         <ul class="nav nav-treeview">
                             <li class="nav-item">
                                 <a href="../examples/pace.html" class="nav-link">
@@ -105,6 +139,38 @@
                                 </ul>
                             </li>
                         </ul>
+=======
+                    </li>
+                    <li class="nav-item">
+                        <a href="../examples/blank.html" class="nav-link">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>Pengaudan</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/kesehatan" class="nav-link">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>Kesehatan</p>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        {{-- Surat Online --}}
+        <ul class="nav nav-pills nav-sidebar flex-column mt-2" data-widget="treeview" role="menu"
+            data-accordion="false">
+            <li class="nav-item has-treeview">
+                {{-- Extra --}}
+                <a href="/suratonline" class="nav-link">
+                    <i class="nav-icon fas fa-envelope"></i>
+                    <p>
+                        Surat Online
+                    </p>
+                </a>
+            </li>
+        </ul>
+>>>>>>> de1be75d84883065a199fde33272a442930a3ebd
 
                         {{-- Surat Online --}}
                         <ul class="nav nav-pills nav-sidebar flex-column mt-2" data-widget="treeview" role="menu"
@@ -148,6 +214,7 @@
                             </li>
                         </ul>
 
+<<<<<<< HEAD
                         {{-- Transparansi Keuangan --}}
                         <ul class="nav nav-pills nav-sidebar flex-column mt-2" data-widget="treeview" role="menu"
                             data-accordion="false">
@@ -161,6 +228,21 @@
                                 </a>
                             </li>
                         </ul>
+=======
+        {{-- Transparansi Keuangan --}}
+        <ul class="nav nav-pills nav-sidebar flex-column mt-2" data-widget="treeview" role="menu"
+            data-accordion="false">
+            <li class="nav-item has-treeview">
+                {{-- Extra --}}
+                <a href="/keuangan" class="nav-link">
+                    <i class="nav-icon fas fa-donate"></i>
+                    <p>
+                        Transparansi Keuangan
+                    </p>
+                </a>
+            </li>
+        </ul>
+>>>>>>> de1be75d84883065a199fde33272a442930a3ebd
 
     </nav>
     <!-- /.sidebar-menu -->

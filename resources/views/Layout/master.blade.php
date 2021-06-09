@@ -70,6 +70,9 @@
                             <!-- /.Content Blade -->
                                 @yield('content')
                             
+                                <div class="mb-2">
+                                    <h5 class="title" style="text-align: center">@yield('keterangan')</h5>
+                                </div>
                         </div>
                         <!-- /.card-body -->
                     </div>
@@ -77,12 +80,8 @@
                 </section>
             </div>
             
-            <footer class="main-footer">
-                <strong>Copyright &copy; 2014-2020 <a href="https://adminlte.io">AdminLTE.io</a>.</strong>
-                All rights reserved.
-                <div class="float-right d-none d-sm-inline-block">
-                  <b>Version</b> 3.1.0-rc
-                </div>
+            <footer class="footer">
+                @include('Layout.footer')
               </footer>
 
             <!-- Control Sidebar -->

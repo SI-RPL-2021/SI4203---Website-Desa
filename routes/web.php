@@ -18,10 +18,19 @@ Route::get('/profile', function () {
     return view('profile');
 });
 
+<<<<<<< HEAD
+=======
+
+Route::get('/aboutUs', function () {
+    return view('aboutUs');
+});
+
+>>>>>>> de1be75d84883065a199fde33272a442930a3ebd
 Route::get('/kesehatan', function () {
     return view('kesehatan');
 });
 
+<<<<<<< HEAD
 Route::get('/aspirasi', function () {
     return view('aspirasi');
 });
@@ -40,6 +49,16 @@ Route::get('/buatpengaduan', 'pengaduanController@create')->name("pengaduan.crea
 Route::resource('pengaduan', 'pengaduanController');
 
 
+=======
+Route::get('/kesehatan', function () {
+    return view('kesehatan');
+});
+
+Route::get('/suratonline', function () {
+    return view('suratonline');
+});
+
+>>>>>>> de1be75d84883065a199fde33272a442930a3ebd
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
@@ -49,4 +68,15 @@ Route::get('/article', function () {
     return view('article');
 })->name("article");
 
+
+Route::get('/article/{id}', 'ArticleController@detail')->name("article.detail");
+
+Route::resource('kesehatan', 'kesehatanController');
+
 Route::get('/lembaga', 'lembagaController@index')->name('lembaga');
+
+Route::get('/article/{id}', 'ArticleController@detail')->name("article.detail");
+
+Route::resource('kesehatan', 'kesehatanController');
+
+Route::resource('suratonline', 'suratonlineController');
