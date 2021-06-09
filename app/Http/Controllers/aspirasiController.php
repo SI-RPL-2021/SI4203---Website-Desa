@@ -21,7 +21,7 @@ class aspirasiController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'nama' => 'required',
+            'name' => 'required',
             'Deskripsi' => 'required',
         ]);
         aspirasi::create($request->all());
