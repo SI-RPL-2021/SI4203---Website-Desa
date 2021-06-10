@@ -55,7 +55,7 @@ class RegisterController extends Controller
             'NoIdentitas' => ['required', 'integer', 'min:2'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:2', 'confirmed'],
-            'level' => ['required', 'string', 'max:255'],
+
         ]);
     }
 
@@ -73,7 +73,7 @@ class RegisterController extends Controller
             'NoIdentitas' => $data['NoIdentitas'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
-            'level' => $data['level'],
+            'level' => 'USER'
         ]);
     }
 }

@@ -19,7 +19,7 @@ class ArticleController extends Controller
         $req->img_path->move(public_path('images/upload'), $img_path);
         
 
-        Article::create([
+        article::create([
             'judul' => $req->judul,
             'konten_singkat' => $req->konten_singkat,
             'image'=> $img_path,

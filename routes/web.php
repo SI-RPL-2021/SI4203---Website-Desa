@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 
+
+
 Route::get('/', function () {
     return view('home');
 });
@@ -27,15 +29,9 @@ Route::get('/kesehatan', function () {
     return view('kesehatan');
 });
 
-Route::get('/kesehatan', function () {
-    return view('kesehatan');
-});
 
-Route::get('/suratonline', function () {
-    return view('suratonline');
-});
 
-Auth::routes();
+
 
 Route::get('/home', 'HomeController@index')->name('home');
 // Route::get('/article', 'ArticleController@home')->name("article.home");
@@ -55,4 +51,6 @@ Route::get('/article/{id}', 'ArticleController@detail')->name("article.detail");
 
 Route::resource('kesehatan', 'kesehatanController');
 
-Route::resource('suratonline', 'suratonlineController');
+Auth::routes();
+
+include("admin_routes.php");
