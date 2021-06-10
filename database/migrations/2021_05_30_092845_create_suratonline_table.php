@@ -17,7 +17,8 @@ class CreateSuratonlineTable extends Migration
             $table->id();
             $table->integer('NoIdentitas');
             $table->string('name');
-            $table->integer('Email');
+            $table->string('Email');
+            $table->integer('NoHP');
             $table->string('Alamat');
             $table->string('Jenis');
             $table->string('Pesan');
