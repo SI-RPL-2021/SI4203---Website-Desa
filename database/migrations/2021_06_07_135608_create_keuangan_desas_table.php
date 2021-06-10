@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateSuratonlineTable extends Migration
+class CreateKeuanganDesasTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,15 +13,11 @@ class CreateSuratonlineTable extends Migration
      */
     public function up()
     {
-        Schema::create('suratonline', function (Blueprint $table) {
+        Schema::create('keuangan_desas', function (Blueprint $table) {
             $table->id();
-            $table->integer('NoIdentitas');
-            $table->string('name');
-            $table->string('Email');
-            $table->integer('NoHP');
-            $table->string('Alamat');
-            $table->string('Jenis');
-            $table->string('Pesan');
+            $table->string('file');
+            $table->string('judul');
+            $table->date('tanggal');
             $table->timestamps();
         });
     }
@@ -33,6 +29,6 @@ class CreateSuratonlineTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('suratonline');
+        Schema::dropIfExists('keuangan_desas');
     }
 }

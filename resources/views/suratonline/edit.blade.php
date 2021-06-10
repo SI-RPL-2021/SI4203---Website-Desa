@@ -28,40 +28,62 @@
         @method('PUT')
    
          <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <strong>No Identitas :</strong>
+                    <input type="text" name="NoIdentitas" id="NoIdentitas" class="form-control" value="{{ Auth::user()->NoIdentitas }}">
+                </div>
+            </div>
+            
+            <div class="col-md-6">
+                <div class="form-group">
+                    <strong>Nama :</strong>
+                    <input type="text" name="name" id="name" class="form-control" value="{{ Auth::user()->name }}">
+                </div>
+            </div>
+    
+            <div class="col-md-6">
+                <div class="form-group">
+                    <strong>Email :</strong>
+                    <input type="text" name="email" id="email" class="form-control" value="{{ Auth::user()->email }}">
+                </div>
+            </div>
+    
+                <div class="col-md-6">
                     <div class="form-group">
-                        <strong>No Identitas :</strong>
-                        <input type="text" name="NoIdentitas" id="NoIdentitas" class="form-control" value="{{ Auth::user()->NoIdentitas }}">
+                        <strong>No HP :</strong>
+                        <input type="text" name="NoHP" id="NoHP" class="form-control" placeholder="08XXXX">
                     </div>
                 </div>
-                
-                <div class="col-xs-12 col-sm-12 col-md-12">
-                    <div class="form-group">
-                        <strong>Nama :</strong>
-                        <input type="text" name="name" id="name" class="form-control" value="{{ Auth::user()->name }}">
-                    </div>
+    
+                    <div class="col-md-6">
+                        <div class="form-group">
+                        <Strong>Jenis Surat :</Strong>
+                        <select name="jenis" id="jenis" class="form-control">
+                            <Strong>Jenis Surat :</Strong>
+                            <option value="" hidden selected>-- Pilih Surat --</option>
+                            <option value="SuratKeteranganTidakMampu">Surat Keterangan Tidak Mampu</option>
+                            <option value="SuratPenunjangKTP/SIM"> Surat Penunjang KTP/SIM</option>
+                            <option value="SuratKeteranganKematian"> Surat Keterangan Kematian</option>
+                            <option value="SuratKelahiran"> Surat Kelahiran</option>
+                        </select>
+                        </div>
                 </div>
-        
-                <div class="col-xs-12 col-sm-12 col-md-12">
-                    <div class="form-group">
-                        <strong>No. HP :</strong>
-                        <input type="text" name="NoHP" id="NoHP" class="form-control" placeholder="08XXXXXXXXX">
-                    </div>
+    
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <strong>Alamat :</strong>
+                    <input type="text" name="Alamat" id="Alamat" class="form-control" placeholder="Jl. XXXXXX">
                 </div>
-        
-                <div class="col-xs-12 col-sm-12 col-md-12">
-                    <div class="form-group">
-                        <strong>Alamat :</strong>
-                        <input type="text" name="Alamat" id="Alamat" class="form-control" placeholder="Jl. XXXXXX">
-                    </div>
+            </div>
+    
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <strong>Pesan :</strong>
+                    <textarea class="form-control" style="height:150px" name="pesan" id="pesan" placeholder="Pesan"></textarea>
                 </div>
-        
-                <div class="col-xs-12 col-sm-12 col-md-12">
-                    <div class="form-group">
-                        <strong>Keterangan Keluhan :</strong>
-                        <textarea class="form-control" style="height:150px" name="Keluhan" id="Keluhan" placeholder="Apa keluhan yang anda rasakan"></textarea>
-                    </div>
-                </div>      
+            </div> 
+                  
             <div class="col-xs-12 col-sm-12 col-md-12 text-center">
               <button type="submit" class="btn btn-primary">Submit</button>
             </div>

@@ -24,17 +24,19 @@
             <th>No Identitas</th>
             <th>Name</th>
             <th>Email</th>
+            <th>Nomor HP</th>
             <th>Alamat</th>
             <th>Jenis Surat</th>
             <th>Pesan</th>
-            <th width="280px">Action</th>
+            <th width="150px">Action</th>
         </tr>
         @foreach ($suratonline as $suratonline)
         <tr>
             <td>{{ ++$i }}</td>
             <td>{{ $suratonline->NoIdentitas }}</td>
             <td>{{ $suratonline->name }}</td>
-            <td>{{ $suratonline->Email }}</td>
+            <td>{{ $suratonline->email }}</td>
+            <td>{{ $suratonline->NoHP }}</td>
             <td>{{ $suratonline->Alamat }}</td>
             <td>{{ $suratonline->Jenis }}</td>
             <td>{{ $suratonline->Pesan }}</td>

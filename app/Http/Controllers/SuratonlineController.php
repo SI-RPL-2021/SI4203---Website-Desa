@@ -37,9 +37,11 @@ class SuratonlineController extends Controller
         $request->validate([
             'NoIdentitas' => 'required',
             'name' => 'required',
+            'email' => 'required',
             'NoHP' => 'required',
+            'jenis' => 'required',
             'Alamat' => 'required',
-            'Keluhan' => 'required',
+            'pesan' => 'required',
         ]);
         Suratonline::create($request->all());
         return redirect()->route('suratonline.index')->with('success', 'Data berhasil di input');
@@ -60,7 +62,7 @@ class SuratonlineController extends Controller
      * @param  \App\Suratonline  $suratonline
      * @return \Illuminate\Http\Response
      */
-    public function edit(Suratonline $kesehatan)
+    public function edit(Suratonline $suratonline)
     {
         return view('suratonline.edit', compact('suratonline'));
     }
@@ -76,9 +78,11 @@ class SuratonlineController extends Controller
         $request->validate([
             'NoIdentitas' => 'required',
             'name' => 'required',
+            'email' => 'required',
             'NoHP' => 'required',
+            'jenis' => 'required',
             'Alamat' => 'required',
-            'Keluhan' => 'required',
+            'pesan' => 'required',
         ]);
         $suratonline->update($request->all());
         return redirect()->route('suratonline.index')->with('success', 'Surat Online berhasil di update');
@@ -91,7 +95,7 @@ class SuratonlineController extends Controller
      */
     public function destroy(Suratonline $suratonline)
     {
-        $kesehatan->delete();
+        $suratonline->delete();
         return redirect()->route('suratonline.index')->with('success', 'Surat Online berhasil dihapus');
     }
 }

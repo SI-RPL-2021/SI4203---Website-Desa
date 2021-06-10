@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 
+
+
 Route::get('/', function () {
     return view('home');
 });
@@ -26,6 +28,7 @@ Route::get('/kesehatan', function () {
     return view('kesehatan');
 });
 
+<<<<<<< HEAD
 Route::get('/aspirasi', function () {
     return view('aspirasi');
 });
@@ -47,12 +50,11 @@ Route::resource('pengaduan', 'pengaduanController');
 Route::get('/kesehatan', function () {
     return view('kesehatan');
 });
+=======
+>>>>>>> cfb4b90791274ea22a87fc5c8d4480f5e3ccbe78
 
-Route::get('/suratonline', function () {
-    return view('suratonline');
-});
 
-Auth::routes();
+
 
 Route::get('/home', 'HomeController@index')->name('home');
 // Route::get('/article', 'ArticleController@home')->name("article.home");
@@ -72,4 +74,10 @@ Route::get('/article/{id}', 'ArticleController@detail')->name("article.detail");
 
 Route::resource('kesehatan', 'kesehatanController');
 
+<<<<<<< HEAD
 Route::resource('suratonline', 'suratonlineController');
+=======
+Auth::routes();
+
+include("admin_routes.php");
+>>>>>>> cfb4b90791274ea22a87fc5c8d4480f5e3ccbe78
