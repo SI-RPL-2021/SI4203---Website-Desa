@@ -44,7 +44,7 @@
         <div class="col-md-6">
             <div class="form-group">
                 <strong>Email :</strong>
-                <input type="text" name="email" id="email" class="form-control" value="{{ Auth::user()->Email }}">
+                <input type="text" name="email" id="email" class="form-control" value="{{ Auth::user()->email }}">
             </div>
         </div>
 
@@ -58,16 +58,13 @@
                 <div class="col-md-6">
                     <div class="form-group">
                     <Strong>Jenis Surat :</Strong>
-                    <select name="level" id="level" class="form-control">
+                    <select name="jenis" id="jenis" class="form-control">
                         <Strong>Jenis Surat :</Strong>
                         <option value="" hidden selected>-- Pilih Surat --</option>
-                        <option value="Surat Keterangan Tidak Mampu">Surat Keterangan Tidak Mampu</option>
-                        <option value="Surat Keterangan Mengadakan Kegiatan"> Surat Keterangan Mengadakan Kegiatan</option>
-                        <option value="Surat Keterangan Kependudukan Desa"> Surat Keterangan Kependudukan Desa</option>
-                        <option value="Surat Penunjang KTP/SIM"> Surat Penunjang KTP/SIM</option>
-                        <option value="Surat Keterangan Kematian"> Surat Keterangan Kematian</option>
-                        <option value="Surat Kelahiran"> Surat Kelahiran</option>
-                        <option value="Surat Keterangan Usaha"> Surat Keterangan Usaha</option>
+                        <option value="SuratKeteranganTidakMampu">Surat Keterangan Tidak Mampu</option>
+                        <option value="SuratPenunjangKTP/SIM"> Surat Penunjang KTP/SIM</option>
+                        <option value="SuratKeteranganKematian"> Surat Keterangan Kematian</option>
+                        <option value="SuratKelahiran"> Surat Kelahiran</option>
                     </select>
                     </div>
             </div>
@@ -81,8 +78,8 @@
 
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>Keterangan Keluhan :</strong>
-                <textarea class="form-control" style="height:150px" name="Keluhan" id="Keluhan" placeholder="Apa keluhan yang anda rasakan"></textarea>
+                <strong>Pesan :</strong>
+                <textarea class="form-control" style="height:150px" name="pesan" id="pesan" placeholder="Pesan"></textarea>
             </div>
         </div>      
 
