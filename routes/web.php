@@ -49,7 +49,7 @@ Route::get('/lembaga', 'lembagaController@index')->name('lembaga');
 
 Route::get('/article/{id}', 'ArticleController@detail')->name("article.detail");
 
-Route::resource('kesehatan', 'kesehatanController');
+Route::resource('suratonline', 'SuratonlineController');
 
 Auth::routes();
 
