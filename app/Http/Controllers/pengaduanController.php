@@ -20,14 +20,27 @@ class pengaduanController extends Controller
 
     public function store(Request $request)
     {
-        $img_path = time() . '.' . $req->img_path->extension();
-        $req->img_path->move(public_path('images/upload'), $img_path);
+
+        // $photo = time() . '.' . $request->file->extension();
+        //     $request->file->move(public_path('images/upload'), $photo); 
+
+        //     $pengaduan->Nama = $request->Nama;
+        //     $pengaduan->masalah = $request->masalah;
+        //     $pengaduan->bukti = $request->bukti;
+        //     $pengaduan->keterangan = $request->keterangan;
+        //     $pengaduan->file = $photo;
+            
+        //     pengaduan::create($request->all());
+        //     return redirect()->route('pengaduan.index')->with('success', 'Data berhasil di input');
+
+        $img_path = time() . '.' . $request->img_path->extension();
+        $request->img_path->move(public_path('images/upload'), $img_path);
         
         $request->validate([
-            'Nama' => 'required',
-            'masalah' => 'required',
-            'bukti' => 'required',
-            'keterangan' => 'required',
+            'Nama' => $request->Nama,
+            'masalah' => $request->masalah,
+            'bukti' => $request->bukti,
+            'keterangan' => $request->keterangan,
         ]);
         aspirasi::create($request->all());
         return redirect()->route('keterangan.index')->with('success', 'Pengaduan Anda Terkirim');

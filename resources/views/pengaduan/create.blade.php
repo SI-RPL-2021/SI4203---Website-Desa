@@ -45,8 +45,7 @@
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>Bukti Pengaduan :</strong>
-                <!-- <textarea class="form-control" style="height:150px" name="masalah" id="masalah"
-                    placeholder=" "></textarea> -->
+                <input type="file" class="form-control-file" name="img_path" id="img_path">
             </div>
         </div>
 
