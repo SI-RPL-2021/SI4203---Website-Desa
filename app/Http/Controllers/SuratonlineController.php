@@ -62,7 +62,7 @@ class SuratonlineController extends Controller
      * @param  \App\Suratonline  $suratonline
      * @return \Illuminate\Http\Response
      */
-    public function edit(Suratonline $kesehatan)
+    public function edit(Suratonline $suratonline)
     {
         return view('suratonline.edit', compact('suratonline'));
     }
