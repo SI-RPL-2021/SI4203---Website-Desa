@@ -1,11 +1,18 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Article;
 
 
 
 Route::get('/', function () {
-    return view('home');
+    $articles = Article::all();
+    return view('home', compact('articles'));
+})->name('home');
+
+Route::get('/home', function () {
+    $articles = Article::all();
+    return view('home', compact('articles'));
 });
 
 Route::get('/contact', function () {
@@ -40,9 +47,13 @@ Route::resource('aspirasi', 'aspirasiController');
 
 Route::get('/pengaduan', function () {
     return view('pengaduan');
-});
+})->name("pengaduan.index");
 
 Route::get('/buatpengaduan', 'pengaduanController@create')->name("pengaduan.create");
+
+// Route::get('/pengaduan', 'pengaduanController@create')->name("pengaduan.create");
+
+Route::post('/buatpengaduan', 'pengaduanController@store')->name("pengaduan.store");
 
 Route::resource('pengaduan', 'pengaduanController');
 

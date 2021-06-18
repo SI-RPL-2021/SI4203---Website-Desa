@@ -30,11 +30,15 @@
         <td>{{ $pengaduan->Nama }}</td>
         <td>{{ $pengaduan->masalah}}</td>
         <!-- <td>{{ $pengaduan->bukti}}</td> -->
+        <td>
+            <img src="{{asset('public/'.$pengaduan->bukti)}}" alt="" srcset="" width="200px">
+        </td>
+
         <td>{{ $pengaduan->keterangan}}</td>
         <td>
             <form action="{{ route('pengaduan.destroy',$pengaduan->id) }}" method="POST">
 
-                <a class="btn btn-info" href="{{ route('pengaduan.show',$aspirasi->id) }}">Show</a>
+                <a class="btn btn-info" href="{{ route('pengaduan.show',$pengaduan->id) }}">Show</a>
 
                 @csrf
                 @method('DELETE')

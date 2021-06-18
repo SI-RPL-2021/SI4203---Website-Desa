@@ -23,7 +23,7 @@
 </div>
 @endif -->
 
-<form action="{{ route('pengaduan.store') }}" method="POST">
+<form action="{{ route('pengaduan.store') }}" method="POST" enctype="multipart/form-data">
     @csrf
 
     <div class="row">

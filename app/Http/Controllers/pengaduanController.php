@@ -9,7 +9,7 @@ class pengaduanController extends Controller
 {
     public function index()
     {
-        $aspirasi = pengaduan::latest()->paginate(6);
+        $pengaduan = pengaduan::latest()->paginate(6);
         return view('pengaduan.index', compact('pengaduan'))->with('i', (request()->input('page', 1) - 1) * 6);
     }
 
@@ -33,17 +33,35 @@ class pengaduanController extends Controller
         //     pengaduan::create($request->all());
         //     return redirect()->route('pengaduan.index')->with('success', 'Data berhasil di input');
 
-        $img_path = time() . '.' . $request->img_path->extension();
-        $request->img_path->move(public_path('images/upload'), $img_path);
+        // $img_path = time() . '.' . $request->img_path->extension();
+        // $request->img_path->move(public_path('images/upload'), $img_path);
+
+        if ($files = $request->file('img_path')) {
+            $destinationPath = 'public/images/';
+            $file = $request->file('img_path');
+            // upload path         
+            $profileImage = rand(1000, 20000) . "." .
+                $files->getClientOriginalExtension();
+            $pathImg = $file->storeAs('images', $profileImage);
+            $files->move($destinationPath, $profileImage);
+        }
         
-        $request->validate([
-            'Nama' => $request->Nama,
-            'masalah' => $request->masalah,
-            'bukti' => $request->bukti,
-            'keterangan' => $request->keterangan,
-        ]);
-        aspirasi::create($request->all());
-        return redirect()->route('keterangan.index')->with('success', 'Pengaduan Anda Terkirim');
+        // $request->validate([
+        //     'Nama' => $request->Nama,
+        //     'masalah' => $request->masalah,
+        //     'bukti' => $pathImg,
+        //     'keterangan' => $request->keterangan,
+        // ]);
+        // aspirasi::create($request->all());
+
+        $pengaduan = new pengaduan();
+        $pengaduan->Nama = $request->Nama;
+        $pengaduan->masalah = $request->masalah;
+        $pengaduan->bukti = $pathImg;
+        $pengaduan->keterangan = $request->keterangan;
+        $pengaduan->save();
+        
+        return redirect()->route('pengaduan.index')->with('success', 'Pengaduan Anda Terkirim');
     }
 
     public function show(pengaduan $pengaduan)

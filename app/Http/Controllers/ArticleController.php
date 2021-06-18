@@ -31,7 +31,7 @@ class ArticleController extends Controller
             'image'=> $img_path,
             'author_id'=>"desy"
         ]);
-        return redirect(route('article.home'));
+        return redirect(route('home'));
     }
     public function detail(Request $req, $id)
     {
