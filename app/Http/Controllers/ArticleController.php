@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Article;
+use App\Article;
 
 class ArticleController extends Controller
 {
@@ -15,6 +15,12 @@ class ArticleController extends Controller
     public function create(Request $req)
     {
         //$user = Auth::user();//
+        // dd($req);
+
+    // class="form-group">
+    // {!! Form::label('file', 'File:') !!}
+    // <p>{!! $attatchment->file !!}</p>
+    
         $img_path = time() . '.' . $req->img_path->extension();
         $req->img_path->move(public_path('images/upload'), $img_path);
         
@@ -25,7 +31,7 @@ class ArticleController extends Controller
             'image'=> $img_path,
             'author_id'=>"desy"
         ]);
-        return redirect(route('article.home'));
+        return redirect(route('home'));
     }
     public function detail(Request $req, $id)
     {

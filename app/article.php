@@ -1,13 +1,14 @@
 <?php
 
-namespace App\Models;
+namespace App;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
+// use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class Article extends Model
 {
-    use HasFactory;
+    // use HasFactory;
+    // protected $table = "articles";
     protected $fillable = [
         "judul",
         "konten_singkat",
