@@ -84,7 +84,6 @@
                     </li>
                 </ul>
             </li>
-<<<<<<< HEAD
           </ul>
         </li>
       </ul>
@@ -101,9 +100,8 @@
           </a>
         </li>
       </ul>
-=======
         </ul>
->>>>>>> desy
+
 
         {{-- Surat Online --}}
         <ul class="nav nav-pills nav-sidebar flex-column mt-2" data-widget="treeview" role="menu"
