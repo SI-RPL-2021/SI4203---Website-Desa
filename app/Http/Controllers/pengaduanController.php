@@ -29,7 +29,7 @@ class pengaduanController extends Controller
         //     $pengaduan->bukti = $request->bukti;
         //     $pengaduan->keterangan = $request->keterangan;
         //     $pengaduan->file = $photo;
-            
+
         //     pengaduan::create($request->all());
         //     return redirect()->route('pengaduan.index')->with('success', 'Data berhasil di input');
 
@@ -45,7 +45,7 @@ class pengaduanController extends Controller
             $pathImg = $file->storeAs('images', $profileImage);
             $files->move($destinationPath, $profileImage);
         }
-        
+
         // $request->validate([
         //     'Nama' => $request->Nama,
         //     'masalah' => $request->masalah,
@@ -60,7 +60,7 @@ class pengaduanController extends Controller
         $pengaduan->bukti = $pathImg;
         $pengaduan->keterangan = $request->keterangan;
         $pengaduan->save();
-        
+
         return redirect()->route('pengaduan.index')->with('success', 'Pengaduan Anda Terkirim');
     }
 
@@ -69,7 +69,7 @@ class pengaduanController extends Controller
         return view('pengaduan.show', compact('pengaduan'));
     }
 
-    public function delete(pengaduan $pengaduan)
+    public function destroy(pengaduan $pengaduan)
     {
         $pengaduan->delete();
         return redirect()->route('pengaduan.index')->with('success', 'pengaduan berhasil dihapus');
