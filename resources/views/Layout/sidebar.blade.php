@@ -89,7 +89,7 @@
       <ul class="nav nav-pills nav-sidebar flex-column mt-2" data-widget="treeview" role="menu" data-accordion="false">
         <li class="nav-item has-treeview">
           {{-- Extra --}}
-          <a href="#" class="nav-link">
+          <a href="/suratonline" class="nav-link">
             <i class="nav-icon fas fa-envelope"></i>
             <p>
               Surat Online
