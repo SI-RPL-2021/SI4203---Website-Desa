@@ -33,7 +33,7 @@ class aspirasiController extends Controller
         return view('aspirasi.show', compact('aspirasi'));
     }
 
-    public function delete(aspirasi $aspirasi)
+    public function destroy(aspirasi $aspirasi)
     {
         $aspirasi->delete();
         return redirect()->route('aspirasi.index')->with('success', 'aspirasi berhasil dihapus');
