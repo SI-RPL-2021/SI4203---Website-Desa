@@ -78,7 +78,6 @@ Selamat datang di Website Desa Manisrejo
                     <div class="card-body">
                         <h2 class="card-title" style="font-weight: bolder">{{$ar->judul}}</h2>
                         <p class="card-text">{{$ar->konten_singkat}}</p>
-                        <a class="btn btn-primary" href="#!">Read More →</a>
                     </div>
                     <div class="card-footer text-muted">
                         Posted on {{$ar->crated_at}} by Admin
