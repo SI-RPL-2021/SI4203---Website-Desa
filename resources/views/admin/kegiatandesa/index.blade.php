@@ -39,6 +39,8 @@
                                     Edit</a>
                                 <form action="{{ url('/admin/kegiatandesa/' . $activity->id) }}" method="post"
                                     class="w-100">
+                                    @csrf
+                                    @method('DELETE')
                                     <button class="btn btn-sm btn-danger text-white w-100">Hapus</button>
                                 </form>
                             </div>

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 @extends('Layout.master')
 
 @section('caption')
@@ -7,7 +5,6 @@ About Us
 @endsection
 
 @section('content')
-<section class="content">
 
       <!-- Default box -->
       <div class="card card-solid">
@@ -173,4 +170,3 @@ About Us
         </div>
        
 @endsection
->>>>>>> ais

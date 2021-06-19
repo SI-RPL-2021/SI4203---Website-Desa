@@ -29,10 +29,6 @@ Route::get('/kesehatan', function () {
     return view('kesehatan');
 });
 
-
-
-
-
 Route::get('/home', 'HomeController@index')->name('home');
 // Route::get('/article', 'ArticleController@home')->name("article.home");
 Route::post('/article', 'ArticleController@create')->name("article.create");

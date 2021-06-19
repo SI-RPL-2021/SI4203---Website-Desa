@@ -24,6 +24,7 @@ Transparansi Keuangan
                 </thead>
                 <tbody>
                 <tr>
+                  @foreach ($financeDatas as $financeData)
                   <td>1. </td>
                   <td>Anggaran Desa BLT 2020
                   </td>
