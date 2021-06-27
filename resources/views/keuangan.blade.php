@@ -23,15 +23,17 @@ Transparansi Keuangan
                 </tr>
                 </thead>
                 <tbody>
-                <tr>
-                  @foreach ($financeDatas as $financeData)
-                  <td>1. </td>
-                  <td>Anggaran Desa BLT 2020
-                  </td>
-                  <td>20 Januari 2021</td>
-                  <td><button type="button" class="btn btn-success">Lihat Keuangan</button></td>
-                </tr>
+                @foreach($finances as $finance)
+                  <tr>
+                    <td>{{$loop->iteration}}</td>
+                    <td>{{$finance->judul}}
+                    </td>
+                    <td>{{$finance->tanggal}}</td>
+                    <td><a target="_blank" href="/storage/{{$finance->file}}" class="btn btn-success">Lihat Keuangan</button></td>
+                  </tr>
+                @endforeach
                 </tfoot>
+                
               </table>
             </div>
             <!-- /.card-body -->
