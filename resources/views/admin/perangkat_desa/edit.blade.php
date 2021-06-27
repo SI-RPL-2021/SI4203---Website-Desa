@@ -12,11 +12,15 @@
     <div class="container pt-5 pb-5">
         <div class="card">
             <div class="card-body">
-                <h3 class="font-weight-bold">Tambah Data Perangkat Desa</h3>
+                <h3 class="font-weight-bold">Edit Perangkat Desa</h3>
 
-                <form action="{{ url('/admin/perangkatdesa/' . $perangkatDesa->id) }}" method="post">
+                <form action="{{ url('/admin/perangkatdesa/' . $perangkatDesa->id) }}" method="post" enctype="multipart/form-data">
                     @csrf
                     @method('PUT')
+                    <div class ="form-group mb-3">
+                        <label for="image">Foto</label>
+                        <input type="file" name="image" id="image">
+                    </div>
                     <div class="form-group mb-3">
                         <label class="mb-2" for="nama">Nama</label>
                         <input type="text" name="nama" class="form-control" id="nama" value="{{ $perangkatDesa->nama }}">
@@ -40,11 +44,5 @@
                 </form>
             </div>
         </div>
-
-
-
-
-
-
     </div>
 @endsection

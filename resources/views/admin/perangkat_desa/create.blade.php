@@ -14,8 +14,13 @@
             <div class="card-body">
                 <h3 class="font-weight-bold">Tambah Data Perangkat Desa</h3>
 
-                <form action="{{ url('/admin/perangkatdesa') }}" method="post">
+                <form action="{{ url('/admin/perangkatdesa') }}" method="post" enctype ="multipart/form-data">
                     @csrf
+
+                    <div class ="form-group mb-3">
+                        <label for="image">Foto</label>
+                        <input type="file" name="image" id="image">
+                    </div>
                     <div class="form-group mb-3">
                         <label class="mb-2" for="nama">Nama</label>
                         <input type="text" name="nama" class="form-control" id="nama">
@@ -37,5 +42,11 @@
                 </form>
             </div>
         </div>
+
+
+
+
+
+
     </div>
 @endsection
