@@ -137,22 +137,7 @@
 <div class="row">
     <div class="col-12">
         <div class="row">
-            @foreach ($activities as $activity)
-            <div class="col-md-4 mb-5">
-                <div class="card">
-                    <div class="card-body">
-                        <img src="/storage/{{ $activity->gambar }}" alt="Kegiatan" style="width:100%; object-fit: cover">
-                        <p class="font-weight-bold mb-2">{{ $activity->nama }}</p>
-                        <p><i class="fas fa-calendar me-3"></i> {{ $activity->tanggal }}</p>
-                        <p><i class="fas fa-clock me-3"></i>{{ $activity->waktu }}</p>
-                        <hr>
-                        <div class="d-flex justify-content-end">
-                            <p class="text-muted">Kegiatan dari {{ $activity->lembaga }}</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            @endforeach
+            
         </div>
 
     </div>

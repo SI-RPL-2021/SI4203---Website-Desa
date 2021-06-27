@@ -56,19 +56,17 @@ class KegiatanDesaController extends Controller
 
     public function update(Request $request, $kegiatandesa)
     {
-        $kegiatanDesa = KegiatanDesa::find($kegiatandesa);
+        $kegiatanDesa = KegiatanDesa::findOrFail($kegiatandesa);
+        if ($request->image) {
+            $image = Storage::disk('public')->put('kegiatandesa', $request->image);
+            $kegiatanDesa->gambar = $image;
+        }
+
         $kegiatanDesa->nama = $request->nama;
         $kegiatanDesa->tanggal = $request->tanggal;
         $kegiatanDesa->deskripsi = $request->deskripsi;
         $kegiatanDesa->waktu = $request->waktu;
         $kegiatanDesa->lembaga = $request->lembaga;
-
-        if ($request->image) {
-
-            $image = Storage::disk('public')->put('kegiatan_desa', $request->image);
-            $kegiatanDesa->gambar = $image;
-        }
-
         $kegiatanDesa->save();
         Alert::success('Berhasil', 'Kegiatan Desa telah di update!');
         return redirect('/admin/kegiatandesa');
