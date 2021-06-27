@@ -14,9 +14,9 @@
             <div class="card-body">
                 <h3 class="font-weight-bold">Edit Data Keuangan Desa</h3>
 
-                <form action="{{ url('/admin/keuangandesa') }}" method="post" enctype="multipart/form-data">
+                <form action="{{ url('/admin/keuangandesa/'. $financeData->id) }}" method="post" enctype="multipart/form-data">
                     @csrf
-
+                    @method('put')
                     <div class="form-group mb-3">
                         <label class="mb-2" for="file">File Laporan Keuangan</label><br>
                         <input type="file" name="file" class="form-control" id="file">

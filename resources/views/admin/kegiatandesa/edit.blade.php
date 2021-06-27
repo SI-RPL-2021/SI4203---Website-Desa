@@ -12,13 +12,15 @@
     <div class="container pt-5 pb-5">
         <div class="card">
             <div class="card-body">
-                <h3 class="font-weight-bold">Tambah Data Kegiatan Desa</h3>
+                <h3 class="font-weight-bold">Edit Kegiatan Desa</h3>
 
-                <form action="{{ url('/admin/kegiatandesa') }}" method="post" enctype="multipart/form-data">
+                <form action="{{ url('/admin/kegiatandesa/' . $kegiatanDesa->id) }}" method="post" enctype="multipart/form-data">
+                    
                     @csrf
+                    @method('put')
                     <div class="form-group mb-3 mt-5">
                         <label class="mb-2" for="image">Gambar Kegiatan</label><br>
-                        <input type="file" name="image" class="form-control-file" id="image">
+                        <input type="file" name="image" id="image">
                     </div>
                     <hr>
                     <div class="form-group mb-3">
@@ -40,20 +42,15 @@
                         <input type="time" name="waktu" class="form-control" id="waktu"
                             value="{{ $kegiatanDesa->waktu }}">
                     </div>
-
                     <div class="form-group mb-3">
                         <label class="mb-2" for="lembaga">Lembaga</label>
                         <select name="lembaga" id="lembaga" class="form-control">
-
-                            <option value="Lembaga 1">Lembaga 1</option>
-                            <option value="Lembaga 2">Lembaga 2</option>
-                            <option value="Lembaga 3">Lembaga 3</option>
+                            <option value="LPM">LPM</option>
+                            <option value="PKK">PKK</option>
+                            <option value="Karang Taruna">Karang Taruna</option>
                         </select>
                     </div>
-
-
-
-                    <button class="btn btn-success mt-3 w-100">Tambahkan Data</button>
+                    <button class="btn btn-success mt-3 w-100">Update Data</button>
                 </form>
             </div>
         </div>

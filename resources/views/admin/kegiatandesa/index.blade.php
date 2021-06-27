@@ -37,12 +37,14 @@
                                 <a href="{{ url('/admin/kegiatandesa/' . $activity->id . '/edit') }}"
                                     class="btn btn-warning btn-sm text-white me-2 w-100">
                                     Edit</a>
-                                <form action="{{ url('/admin/kegiatandesa/' . $activity->id) }}" method="post"
+                                
+                                    <form action="{{ url('/admin/kegiatandesa/' . $activity->id) }}" method="post"
                                     class="w-100">
                                     @csrf
                                     @method('DELETE')
                                     <button class="btn btn-sm btn-danger text-white w-100">Hapus</button>
                                 </form>
+                            
                             </div>
                         </div>
                     </div>

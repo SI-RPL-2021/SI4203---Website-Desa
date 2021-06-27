@@ -41,10 +41,9 @@
                     <div class="form-group mb-3">
                         <label class="mb-2" for="lembaga">Lembaga</label>
                         <select name="lembaga" id="lembaga" class="form-control">
-
-                            <option value="Lembaga 1">Lembaga 1</option>
-                            <option value="Lembaga 2">Lembaga 2</option>
-                            <option value="Lembaga 3">Lembaga 3</option>
+                            <option value="LPM">LPM</option>
+                            <option value="PKK">PKK</option>
+                            <option value="Karang Taruna">Karang Taruna</option>
                         </select>
                     </div>
 

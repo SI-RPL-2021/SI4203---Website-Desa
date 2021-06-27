@@ -24,6 +24,7 @@
             <thead>
                 <th>No</th>
                 <th>Judul</th>
+                <th>Tanggal</th>
                 <th>File</th>
                 <th>Aksi</th>
             </thead>
@@ -33,6 +34,7 @@
                     <tr class="text-light">
                         <td>{{ $loop->iteration }}</td>
                         <td>{{ $financeData->judul }}</td>
+                        <td>{{ $financeData->tanggal }}</td>
                         <td><a href="/storage/{{ $financeData->file }}">
                                 Download File</a>
                         </td>
